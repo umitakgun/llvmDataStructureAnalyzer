@@ -123,6 +123,19 @@ DataStructureAnalyzerPass/fast:
 	$(MAKE) -f DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/build.make DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/build
 .PHONY : DataStructureAnalyzerPass/fast
 
+#=============================================================================
+# Target rules for targets named PointerStructureAnalysis
+
+# Build rule for target.
+PointerStructureAnalysis: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PointerStructureAnalysis
+.PHONY : PointerStructureAnalysis
+
+# fast build rule for target.
+PointerStructureAnalysis/fast:
+	$(MAKE) -f PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/build.make PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/build
+.PHONY : PointerStructureAnalysis/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +145,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DataStructureAnalyzerPass"
+	@echo "... PointerStructureAnalysis"
 .PHONY : help
 
 

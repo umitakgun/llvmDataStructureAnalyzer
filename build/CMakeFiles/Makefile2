@@ -115,6 +115,61 @@ clean: DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory PointerStructureAnalysis
+
+# Convenience name for "all" pass in the directory.
+PointerStructureAnalysis/all: PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/all
+
+.PHONY : PointerStructureAnalysis/all
+
+# Convenience name for "clean" pass in the directory.
+PointerStructureAnalysis/clean: PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/clean
+
+.PHONY : PointerStructureAnalysis/clean
+
+# Convenience name for "preinstall" pass in the directory.
+PointerStructureAnalysis/preinstall:
+
+.PHONY : PointerStructureAnalysis/preinstall
+
+#=============================================================================
+# Target rules for target PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir
+
+# All Build rule for target.
+PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/all:
+	$(MAKE) -f PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/build.make PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/depend
+	$(MAKE) -f PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/build.make PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles --progress-num=3,4 "Built target PointerStructureAnalysis"
+.PHONY : PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/all
+
+# Include target in all.
+all: PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles 0
+.PHONY : PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/rule
+
+# Convenience name for target.
+PointerStructureAnalysis: PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/rule
+
+.PHONY : PointerStructureAnalysis
+
+# clean rule for target.
+PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/clean:
+	$(MAKE) -f PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/build.make PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/clean
+.PHONY : PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/clean
+
+# clean rule for target.
+clean: PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

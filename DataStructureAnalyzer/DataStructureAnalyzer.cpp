@@ -1,5 +1,6 @@
 // Copyright [2015] Umit Akgun
 
+#include <cxxabi.h>
 #include "llvm/Pass.h"
 #include "llvm/IR/Function.h"
 #include "llvm/Support/raw_ostream.h"
@@ -30,8 +31,22 @@ namespace {
           if (CallInst* callInst = dyn_cast<CallInst>(&inst)) {
             errs() << "---------------------------------------------\n";
             errs().write_escaped("I find a function call") << "\n";
-            errs() << "Caller function " <<  F.getName() << "\n";
-            errs() << "Called function " <<  callInst->getCalledFunction()->getName() << "\n";
+            auto callerName = F.getName().str();
+            auto calledName = callInst->getCalledFunction()->getName().str();
+
+            auto callName = abi::__cxa_demangle(callerName.c_str(), NULL, NULL, NULL);
+            if ( NULL != callName ) {
+              errs() << "Caller function " << callName << "\n";
+            } else {
+              errs() << "Caller function " << callerName << "\n";
+            }
+            callName = abi::__cxa_demangle(calledName.c_str(), NULL, NULL, NULL);
+            if ( NULL != callName ) {
+              errs() << "Caller function " << callName << "\n";
+            } else {
+              errs() << "Caller function " << calledName << "\n";
+            }
+
             errs() << "---------------------------------------------\n";
           }
         }

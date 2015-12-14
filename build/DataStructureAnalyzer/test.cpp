@@ -2,8 +2,10 @@
 
 class Node{
  public:
-  Node();
-  virtual ~Node();
+  Node() {
+  }
+  virtual ~Node() {
+  }
 
   explicit Node(int initialValue) {
     this->value = initialValue;
@@ -23,8 +25,11 @@ class Node{
 
 class LinkedList{
  public:
-  LinkedList();
-  virtual ~LinkedList();
+  LinkedList() {
+  }
+
+  virtual ~LinkedList() {
+  }
 
   void insertNode(Node *newNode) {
   }

@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/Users/umit/research/LLVM/build/include/__cxxabi_config.h
+
+/Users/umit/research/LLVM/build/include/cxxabi.h
+stddef.h
+-
+stdint.h
+-
+__cxxabi_config.h
+-
+
 /Users/umit/research/LLVM/build/include/llvm/Config/llvm-config.h
 
 /Users/umit/research/LLVM/build/include/llvm/IR/Attributes.inc
@@ -923,6 +933,8 @@ llvm/IR/CFG.h
 /Users/umit/research/LLVM/llvm/include/llvm/Transforms/Utils/llvm/IR/CFG.h
 
 /Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp
+cxxabi.h
+-
 llvm/Pass.h
 /Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Pass.h
 llvm/IR/Function.h
