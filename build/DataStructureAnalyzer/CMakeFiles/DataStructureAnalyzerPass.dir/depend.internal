@@ -4,6 +4,7 @@
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.o
  /Users/umit/research/LLVM/build/include/llvm/Config/llvm-config.h
  /Users/umit/research/LLVM/build/include/llvm/IR/Attributes.inc
+ /Users/umit/research/LLVM/build/include/llvm/IR/Intrinsics.gen
  /Users/umit/research/LLVM/build/include/llvm/Support/DataTypes.h
  /Users/umit/research/LLVM/llvm/include/llvm-c/Core.h
  /Users/umit/research/LLVM/llvm/include/llvm-c/Support.h
@@ -14,6 +15,7 @@ DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnal
  /Users/umit/research/LLVM/llvm/include/llvm/ADT/DenseMapInfo.h
  /Users/umit/research/LLVM/llvm/include/llvm/ADT/EpochTracker.h
  /Users/umit/research/LLVM/llvm/include/llvm/ADT/FoldingSet.h
+ /Users/umit/research/LLVM/llvm/include/llvm/ADT/GraphTraits.h
  /Users/umit/research/LLVM/llvm/include/llvm/ADT/Hashing.h
  /Users/umit/research/LLVM/llvm/include/llvm/ADT/None.h
  /Users/umit/research/LLVM/llvm/include/llvm/ADT/Optional.h
@@ -31,17 +33,29 @@ DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnal
  /Users/umit/research/LLVM/llvm/include/llvm/IR/Argument.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/Attributes.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/BasicBlock.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/CFG.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/CallingConv.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/Constant.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/ConstantFolder.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/Constants.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/DataLayout.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/DebugLoc.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/DerivedTypes.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/Function.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/GlobalObject.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/GlobalValue.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/GlobalVariable.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/IRBuilder.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/InstrTypes.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/Instruction.def
  /Users/umit/research/LLVM/llvm/include/llvm/IR/Instruction.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/Instructions.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/Intrinsics.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/LLVMContext.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/LegacyPassManager.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/MetadataTracking.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/OperandTraits.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/Operator.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/SymbolTableListTraits.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/TrackingMDRef.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/Type.h
@@ -49,6 +63,7 @@ DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnal
  /Users/umit/research/LLVM/llvm/include/llvm/IR/User.h
  /Users/umit/research/LLVM/llvm/include/llvm/IR/Value.def
  /Users/umit/research/LLVM/llvm/include/llvm/IR/Value.h
+ /Users/umit/research/LLVM/llvm/include/llvm/IR/ValueHandle.h
  /Users/umit/research/LLVM/llvm/include/llvm/InitializePasses.h
  /Users/umit/research/LLVM/llvm/include/llvm/Pass.h
  /Users/umit/research/LLVM/llvm/include/llvm/PassAnalysisSupport.h
@@ -61,15 +76,19 @@ DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnal
  /Users/umit/research/LLVM/llvm/include/llvm/Support/Atomic.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/CBindingWrapping.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/Casting.h
+ /Users/umit/research/LLVM/llvm/include/llvm/Support/CommandLine.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/Compiler.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/ErrorHandling.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/Host.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/MathExtras.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/Memory.h
+ /Users/umit/research/LLVM/llvm/include/llvm/Support/Options.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/PointerLikeTypeTraits.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/RWMutex.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/SwapByteOrder.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/Threading.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/raw_ostream.h
  /Users/umit/research/LLVM/llvm/include/llvm/Support/type_traits.h
+ /Users/umit/research/LLVM/llvm/include/llvm/Transforms/IPO/PassManagerBuilder.h
+ /Users/umit/research/LLVM/llvm/include/llvm/Transforms/Utils/BasicBlockUtils.h
  /Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp

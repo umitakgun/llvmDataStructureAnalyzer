@@ -3,6 +3,11 @@
 #include "llvm/Pass.h"
 #include "llvm/IR/Function.h"
 #include "llvm/Support/raw_ostream.h"
+#include "llvm/IR/LegacyPassManager.h"
+#include "llvm/IR/InstrTypes.h"
+#include "llvm/Transforms/IPO/PassManagerBuilder.h"
+#include "llvm/IR/IRBuilder.h"
+#include "llvm/Transforms/Utils/BasicBlockUtils.h"
 
 using namespace llvm;
 
@@ -12,9 +17,27 @@ namespace {
     DataStructureAnalyzerPass() : FunctionPass(ID) {}
 
     bool runOnFunction(Function &F) override {
-      errs().write_escaped(F.getName()) << '\n';
-      F.dump();
-      return false;
+      // errs().write_escaped(F.getName()) << '\n';
+      // errs() << "Function Body\n";
+      // F.dump();
+
+      for (BasicBlock&  BB : F) {
+        // errs().write_escaped("Basic Block") << '\n';
+        // BB.dump();
+
+        for (Instruction& inst : BB) {
+          // errs() << "Instruction\n";
+          if (CallInst* callInst = dyn_cast<CallInst>(&inst)) {
+            errs() << "---------------------------------------------\n";
+            errs().write_escaped("I find a function call") << "\n";
+            errs() << "Caller function " <<  F.getName() << "\n";
+            errs() << "Called function " <<  callInst->getCalledFunction()->getName() << "\n";
+            errs() << "---------------------------------------------\n";
+          }
+        }
+      }
+
+      return false;  // we didn't change anything
     }
   };
 }  // namespace
