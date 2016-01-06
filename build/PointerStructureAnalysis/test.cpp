@@ -50,6 +50,5 @@ class LinkedList{
 int main(int argc, char *argv[]) {
   LinkedList* l = new LinkedList();
   l->insertNode(new Node(5));
-  
   return 0;
 }

@@ -1,5 +1,3 @@
-// Copyright [2015] Umit Akgun
-
 #include <stdio.h>
 
 void test2(int *b) {
@@ -16,7 +14,7 @@ int main(int argc, char *argv[]) {
   int b = 1;
 
   test(&a);
-  
+
   if (a >= 0) {
     b++;
   } else {

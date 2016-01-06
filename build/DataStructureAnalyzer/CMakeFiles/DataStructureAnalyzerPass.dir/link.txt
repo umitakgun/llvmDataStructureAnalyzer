@@ -1,1 +1,1 @@
-/Users/umit/research/LLVM/build/bin/clang++   -bundle -Wl,-headerpad_max_install_names -undefined dynamic_lookup -o libDataStructureAnalyzerPass.so CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.o  -L/Users/umit/research/LLVM/build/./lib 
+/usr/local/bin/clang++  -fPIC   -shared -Wl,-soname,libDataStructureAnalyzerPass.so -o libDataStructureAnalyzerPass.so CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.o 

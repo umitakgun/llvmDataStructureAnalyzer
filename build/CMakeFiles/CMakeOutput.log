@@ -1,6 +1,6 @@
-The system is: Darwin - 15.2.0 - x86_64
+The system is: Linux - 4.2.0-22-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+Compiler: /usr/local/bin/clang 
 Build flags: 
 Id flags: 
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is AppleClang, found in "/Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/3.4.0/CompilerIdC/a.out"
+The C compiler identification is Clang, found in "/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/3.2.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+Compiler: /usr/local/bin/clang++ 
 Build flags: 
 Id flags: 
 
@@ -23,99 +23,146 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is AppleClang, found in "/Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/3.4.0/CompilerIdCXX/a.out"
+The CXX compiler identification is Clang, found in "/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/3.2.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_52d20/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_52d20.dir/build.make CMakeFiles/cmTC_52d20.dir/build
-Building C object CMakeFiles/cmTC_52d20.dir/testCCompiler.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_52d20.dir/testCCompiler.c.o   -c /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_52d20
-/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52d20.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_52d20.dir/testCCompiler.c.o  -o cmTC_52d20  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4268043391/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4268043391.dir/build.make CMakeFiles/cmTryCompileExec4268043391.dir/build
+make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4268043391.dir/testCCompiler.c.o
+/usr/local/bin/clang    -o CMakeFiles/cmTryCompileExec4268043391.dir/testCCompiler.c.o   -c /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec4268043391
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4268043391.dir/link.txt --verbose=1
+/usr/local/bin/clang       CMakeFiles/cmTryCompileExec4268043391.dir/testCCompiler.c.o  -o cmTryCompileExec4268043391 -rdynamic 
+make[1]: Leaving directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_163dd/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_163dd.dir/build.make CMakeFiles/cmTC_163dd.dir/build
-Building C object CMakeFiles/cmTC_163dd.dir/CMakeCCompilerABI.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_163dd.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.4.0/share/cmake/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_163dd
-/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_163dd.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_163dd.dir/CMakeCCompilerABI.c.o  -o cmTC_163dd   
-Apple LLVM version 7.0.2 (clang-700.1.81)
-Target: x86_64-apple-darwin15.2.0
+Run Build Command:"/usr/bin/make" "cmTryCompileExec324157697/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec324157697.dir/build.make CMakeFiles/cmTryCompileExec324157697.dir/build
+make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec324157697.dir/CMakeCCompilerABI.c.o
+/usr/local/bin/clang    -o CMakeFiles/cmTryCompileExec324157697.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec324157697
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec324157697.dir/link.txt --verbose=1
+/usr/local/bin/clang      -v CMakeFiles/cmTryCompileExec324157697.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec324157697 -rdynamic  
+clang version 3.8.0 (trunk 248419) (llvm/trunk 248412)
+Target: x86_64-unknown-linux-gnu
 Thread model: posix
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -o cmTC_163dd -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_163dd.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a
-@(#)PROGRAM:ld  PROJECT:ld64-253.9
-configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
-Library search paths:
-	/usr/lib
-	/usr/local/lib
-Framework search paths:
-	/Library/Frameworks/
-	/System/Library/Frameworks/
+InstalledDir: /usr/local/bin
+Found candidate GCC installation: /usr/lib/gcc/i686-linux-gnu/5.2.1
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9.3
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.2.1
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.2.1
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec324157697 /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1 -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../.. -L/usr/local/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTryCompileExec324157697.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_163dd/fast"]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_163dd.dir/build.make CMakeFiles/cmTC_163dd.dir/build]
-  ignore line: [Building C object CMakeFiles/cmTC_163dd.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc     -o CMakeFiles/cmTC_163dd.dir/CMakeCCompilerABI.c.o   -c /usr/local/Cellar/cmake/3.4.0/share/cmake/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_163dd]
-  ignore line: [/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_163dd.dir/link.txt --verbose=1]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_163dd.dir/CMakeCCompilerABI.c.o  -o cmTC_163dd   ]
-  ignore line: [Apple LLVM version 7.0.2 (clang-700.1.81)]
-  ignore line: [Target: x86_64-apple-darwin15.2.0]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec324157697/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec324157697.dir/build.make CMakeFiles/cmTryCompileExec324157697.dir/build]
+  ignore line: [make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec324157697.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/local/bin/clang    -o CMakeFiles/cmTryCompileExec324157697.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec324157697]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec324157697.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/clang      -v CMakeFiles/cmTryCompileExec324157697.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec324157697 -rdynamic  ]
+  ignore line: [clang version 3.8.0 (trunk 248419) (llvm/trunk 248412)]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
   ignore line: [Thread model: posix]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -o cmTC_163dd -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_163dd.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
-    arg [-demangle] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [x86_64] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [10.11.0] ==> ignore
+  ignore line: [InstalledDir: /usr/local/bin]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/i686-linux-gnu/5.2.1]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9.3]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.2.1]
+  ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.2.1]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec324157697 /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1 -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../.. -L/usr/local/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTryCompileExec324157697.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_163dd] ==> ignore
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_163dd.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lSystem] ==> lib [System]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
-  Library search paths: [;/usr/lib;/usr/local/lib]
-  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
-  remove lib [System]
-  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
+    arg [cmTryCompileExec324157697] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5.2.1] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../..]
+    arg [-L/usr/local/bin/../lib] ==> dir [/usr/local/bin/../lib]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTryCompileExec324157697.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1] ==> [/usr/lib/gcc/x86_64-linux-gnu/5.2.1]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/local/bin/../lib] ==> [/usr/local/lib]
+  collapse library dir [/lib] ==> [/lib]
   collapse library dir [/usr/lib] ==> [/usr/lib]
-  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
-  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
-  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
-  implicit libs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
-  implicit dirs: [/usr/lib;/usr/local/lib]
-  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5.2.1;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/usr/local/lib;/lib]
+  implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1ca7b/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_1ca7b.dir/build.make CMakeFiles/cmTC_1ca7b.dir/build
-Building C object CMakeFiles/cmTC_1ca7b.dir/feature_tests.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_1ca7b.dir/feature_tests.c.o   -c /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_1ca7b
-/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ca7b.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_1ca7b.dir/feature_tests.c.o  -o cmTC_1ca7b  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec646709829/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec646709829.dir/build.make CMakeFiles/cmTryCompileExec646709829.dir/build
+make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec646709829.dir/feature_tests.c.o
+/usr/local/bin/clang   -std=c11 -o CMakeFiles/cmTryCompileExec646709829.dir/feature_tests.c.o   -c /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec646709829
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec646709829.dir/link.txt --verbose=1
+/usr/local/bin/clang       CMakeFiles/cmTryCompileExec646709829.dir/feature_tests.c.o  -o cmTryCompileExec646709829 -rdynamic 
+make[1]: Leaving directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -125,15 +172,18 @@ Linking C executable cmTC_1ca7b
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cfeb8/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_cfeb8.dir/build.make CMakeFiles/cmTC_cfeb8.dir/build
-Building C object CMakeFiles/cmTC_cfeb8.dir/feature_tests.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_cfeb8.dir/feature_tests.c.o   -c /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_cfeb8
-/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfeb8.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_cfeb8.dir/feature_tests.c.o  -o cmTC_cfeb8  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3593783925/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3593783925.dir/build.make CMakeFiles/cmTryCompileExec3593783925.dir/build
+make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3593783925.dir/feature_tests.c.o
+/usr/local/bin/clang   -std=c99 -o CMakeFiles/cmTryCompileExec3593783925.dir/feature_tests.c.o   -c /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec3593783925
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3593783925.dir/link.txt --verbose=1
+/usr/local/bin/clang       CMakeFiles/cmTryCompileExec3593783925.dir/feature_tests.c.o  -o cmTryCompileExec3593783925 -rdynamic 
+make[1]: Leaving directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -143,15 +193,18 @@ Linking C executable cmTC_cfeb8
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_93c34/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_93c34.dir/build.make CMakeFiles/cmTC_93c34.dir/build
-Building C object CMakeFiles/cmTC_93c34.dir/feature_tests.c.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_93c34.dir/feature_tests.c.o   -c /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_93c34
-/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93c34.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_93c34.dir/feature_tests.c.o  -o cmTC_93c34  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec749059296/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec749059296.dir/build.make CMakeFiles/cmTryCompileExec749059296.dir/build
+make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec749059296.dir/feature_tests.c.o
+/usr/local/bin/clang   -std=c90 -o CMakeFiles/cmTryCompileExec749059296.dir/feature_tests.c.o   -c /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec749059296
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec749059296.dir/link.txt --verbose=1
+/usr/local/bin/clang       CMakeFiles/cmTryCompileExec749059296.dir/feature_tests.c.o  -o cmTryCompileExec749059296 -rdynamic 
+make[1]: Leaving directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -159,97 +212,141 @@ Linking C executable cmTC_93c34
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_87583/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_87583.dir/build.make CMakeFiles/cmTC_87583.dir/build
-Building CXX object CMakeFiles/cmTC_87583.dir/testCXXCompiler.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++      -o CMakeFiles/cmTC_87583.dir/testCXXCompiler.cxx.o -c /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_87583
-/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87583.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_87583.dir/testCXXCompiler.cxx.o  -o cmTC_87583  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1747410154/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1747410154.dir/build.make CMakeFiles/cmTryCompileExec1747410154.dir/build
+make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1747410154.dir/testCXXCompiler.cxx.o
+/usr/local/bin/clang++     -o CMakeFiles/cmTryCompileExec1747410154.dir/testCXXCompiler.cxx.o -c /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1747410154
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1747410154.dir/link.txt --verbose=1
+/usr/local/bin/clang++        CMakeFiles/cmTryCompileExec1747410154.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1747410154 -rdynamic 
+make[1]: Leaving directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5d8a0/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5d8a0.dir/build.make CMakeFiles/cmTC_5d8a0.dir/build
-Building CXX object CMakeFiles/cmTC_5d8a0.dir/CMakeCXXCompilerABI.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++      -o CMakeFiles/cmTC_5d8a0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.4.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_5d8a0
-/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d8a0.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_5d8a0.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_5d8a0   
-Apple LLVM version 7.0.2 (clang-700.1.81)
-Target: x86_64-apple-darwin15.2.0
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2382845779/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2382845779.dir/build.make CMakeFiles/cmTryCompileExec2382845779.dir/build
+make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2382845779.dir/CMakeCXXCompilerABI.cpp.o
+/usr/local/bin/clang++     -o CMakeFiles/cmTryCompileExec2382845779.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2382845779
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2382845779.dir/link.txt --verbose=1
+/usr/local/bin/clang++       -v CMakeFiles/cmTryCompileExec2382845779.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2382845779 -rdynamic  
+clang version 3.8.0 (trunk 248419) (llvm/trunk 248412)
+Target: x86_64-unknown-linux-gnu
 Thread model: posix
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -o cmTC_5d8a0 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_5d8a0.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a
-@(#)PROGRAM:ld  PROJECT:ld64-253.9
-configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
-Library search paths:
-	/usr/lib
-	/usr/local/lib
-Framework search paths:
-	/Library/Frameworks/
-	/System/Library/Frameworks/
+InstalledDir: /usr/local/bin
+Found candidate GCC installation: /usr/lib/gcc/i686-linux-gnu/5.2.1
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9.3
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.2.1
+Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.2.1
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2382845779 /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1 -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../.. -L/usr/local/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTryCompileExec2382845779.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_5d8a0/fast"]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5d8a0.dir/build.make CMakeFiles/cmTC_5d8a0.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_5d8a0.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++      -o CMakeFiles/cmTC_5d8a0.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/Cellar/cmake/3.4.0/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_5d8a0]
-  ignore line: [/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5d8a0.dir/link.txt --verbose=1]
-  ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_5d8a0.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_5d8a0   ]
-  ignore line: [Apple LLVM version 7.0.2 (clang-700.1.81)]
-  ignore line: [Target: x86_64-apple-darwin15.2.0]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec2382845779/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2382845779.dir/build.make CMakeFiles/cmTryCompileExec2382845779.dir/build]
+  ignore line: [make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2382845779.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/local/bin/clang++     -o CMakeFiles/cmTryCompileExec2382845779.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec2382845779]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2382845779.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/bin/clang++       -v CMakeFiles/cmTryCompileExec2382845779.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2382845779 -rdynamic  ]
+  ignore line: [clang version 3.8.0 (trunk 248419) (llvm/trunk 248412)]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
   ignore line: [Thread model: posix]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -o cmTC_5d8a0 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_5d8a0.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
-    arg [-demangle] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [x86_64] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [10.11.0] ==> ignore
+  ignore line: [InstalledDir: /usr/local/bin]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/i686-linux-gnu/5.2.1]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/4.9.3]
+  ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.2.1]
+  ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/5.2.1]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld" -export-dynamic -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2382845779 /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1 -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../.. -L/usr/local/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTryCompileExec2382845779.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtend.o /usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_5d8a0] ==> ignore
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_5d8a0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-    arg [-lc++] ==> lib [c++]
-    arg [-lSystem] ==> lib [System]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
-  Library search paths: [;/usr/lib;/usr/local/lib]
-  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
-  remove lib [System]
-  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
+    arg [cmTryCompileExec2382845779] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5.2.1] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../..]
+    arg [-L/usr/local/bin/../lib] ==> dir [/usr/local/bin/../lib]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTryCompileExec2382845779.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1] ==> [/usr/lib/gcc/x86_64-linux-gnu/5.2.1]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/5.2.1/../../..] ==> [/usr/lib]
+  collapse library dir [/usr/local/bin/../lib] ==> [/usr/local/lib]
+  collapse library dir [/lib] ==> [/lib]
   collapse library dir [/usr/lib] ==> [/usr/lib]
-  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
-  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
-  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
-  implicit libs: [c++;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a]
-  implicit dirs: [/usr/lib;/usr/local/lib]
-  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/5.2.1;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/usr/local/lib;/lib]
+  implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_4147b/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_4147b.dir/build.make CMakeFiles/cmTC_4147b.dir/build
-Building CXX object CMakeFiles/cmTC_4147b.dir/feature_tests.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_4147b.dir/feature_tests.cxx.o -c /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_4147b
-/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4147b.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_4147b.dir/feature_tests.cxx.o  -o cmTC_4147b  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2420637779/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2420637779.dir/build.make CMakeFiles/cmTryCompileExec2420637779.dir/build
+make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2420637779.dir/feature_tests.cxx.o
+/usr/local/bin/clang++    -std=c++14 -o CMakeFiles/cmTryCompileExec2420637779.dir/feature_tests.cxx.o -c /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec2420637779
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2420637779.dir/link.txt --verbose=1
+/usr/local/bin/clang++        CMakeFiles/cmTryCompileExec2420637779.dir/feature_tests.cxx.o  -o cmTryCompileExec2420637779 -rdynamic 
+make[1]: Leaving directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -300,7 +397,7 @@ Linking CXX executable cmTC_4147b
     Feature record: CXX_FEATURE:1cxx_static_assert
     Feature record: CXX_FEATURE:1cxx_strong_enums
     Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_thread_local
     Feature record: CXX_FEATURE:1cxx_trailing_return_types
     Feature record: CXX_FEATURE:1cxx_unicode_literals
     Feature record: CXX_FEATURE:1cxx_uniform_initialization
@@ -312,15 +409,18 @@ Linking CXX executable cmTC_4147b
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ba754/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_ba754.dir/build.make CMakeFiles/cmTC_ba754.dir/build
-Building CXX object CMakeFiles/cmTC_ba754.dir/feature_tests.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_ba754.dir/feature_tests.cxx.o -c /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ba754
-/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba754.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_ba754.dir/feature_tests.cxx.o  -o cmTC_ba754  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3028028147/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3028028147.dir/build.make CMakeFiles/cmTryCompileExec3028028147.dir/build
+make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3028028147.dir/feature_tests.cxx.o
+/usr/local/bin/clang++    -std=c++11 -o CMakeFiles/cmTryCompileExec3028028147.dir/feature_tests.cxx.o -c /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec3028028147
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3028028147.dir/link.txt --verbose=1
+/usr/local/bin/clang++        CMakeFiles/cmTryCompileExec3028028147.dir/feature_tests.cxx.o  -o cmTryCompileExec3028028147 -rdynamic 
+make[1]: Leaving directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -371,7 +471,7 @@ Linking CXX executable cmTC_ba754
     Feature record: CXX_FEATURE:1cxx_static_assert
     Feature record: CXX_FEATURE:1cxx_strong_enums
     Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_thread_local
     Feature record: CXX_FEATURE:1cxx_trailing_return_types
     Feature record: CXX_FEATURE:1cxx_unicode_literals
     Feature record: CXX_FEATURE:1cxx_uniform_initialization
@@ -383,15 +483,18 @@ Linking CXX executable cmTC_ba754
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
+Change Dir: /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_70201/fast"
-/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_70201.dir/build.make CMakeFiles/cmTC_70201.dir/build
-Building CXX object CMakeFiles/cmTC_70201.dir/feature_tests.cxx.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_70201.dir/feature_tests.cxx.o -c /Users/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_70201
-/usr/local/Cellar/cmake/3.4.0/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70201.dir/link.txt --verbose=1
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_70201.dir/feature_tests.cxx.o  -o cmTC_70201  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1413287391/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1413287391.dir/build.make CMakeFiles/cmTryCompileExec1413287391.dir/build
+make[1]: Entering directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1413287391.dir/feature_tests.cxx.o
+/usr/local/bin/clang++    -std=c++98 -o CMakeFiles/cmTryCompileExec1413287391.dir/feature_tests.cxx.o -c /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec1413287391
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1413287391.dir/link.txt --verbose=1
+/usr/local/bin/clang++        CMakeFiles/cmTryCompileExec1413287391.dir/feature_tests.cxx.o  -o cmTryCompileExec1413287391 -rdynamic 
+make[1]: Leaving directory '/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

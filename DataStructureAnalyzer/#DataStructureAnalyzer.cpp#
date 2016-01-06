@@ -25,6 +25,7 @@ namespace {
       for (BasicBlock&  BB : F) {
         // errs().write_escaped("Basic Block") << '\n';
         // BB.dump();
+        
         for (Instruction& inst : BB) {
           // errs() << "Instruction\n";
           if (CallInst* callInst = dyn_cast<CallInst>(&inst)) {

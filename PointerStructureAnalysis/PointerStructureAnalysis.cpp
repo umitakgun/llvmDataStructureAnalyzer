@@ -1,6 +1,7 @@
 // Copyright [2015] Umit Akgun
 
 #include <cxxabi.h>
+#include <string>
 #include "llvm/Pass.h"
 #include "llvm/IR/Function.h"
 #include "llvm/Support/raw_ostream.h"
@@ -17,15 +18,25 @@ namespace {
     static char ID;
     PointerStructureAnalysis() : BasicBlockPass(ID) {}
 
+    void writeInst(Instruction& inst) {
+      errs() << "---------------------------------------------\n";
+      inst.dump();
+      StringRef funcStr = inst.getParent()->getParent()->getName();
+      std::string mangledName = funcStr.str();
+      auto fName = abi::__cxa_demangle(mangledName.c_str(), NULL, NULL, NULL);
+      if (fName != NULL) {
+        errs() << "Function : " << fName << "\n";
+        errs() << "MangledName :" << funcStr.str() << "\n";
+      } else {
+        errs() << funcStr.str() << "\n";
+      }
+      errs() << "---------------------------------------------\n";
+    }
+
     bool runOnBasicBlock(BasicBlock &BB) override {
       for (Instruction& inst : BB) {
-        if (GetElementPtrInst* gepInst = dyn_cast<GetElementPtrInst>(&inst)) {
-            errs() << "---------------------------------------------\n";
-            gepInst->getType()->dump();
-            auto funcStr = gepInst->getParent()->getParent()->getName();
-            errs() << "Function : " << abi::__cxa_demangle(funcStr.str().c_str(),
-                                                           NULL,NULL,NULL) << "\n";
-            errs() << "---------------------------------------------\n";
+        if (LoadInst* loadInst = dyn_cast<LoadInst>(&inst)) {
+          writeInst(inst);
         }
       }
       return false;  // we didn't change anything
