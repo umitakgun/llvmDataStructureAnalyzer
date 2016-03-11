@@ -1,2 +1,2 @@
-/home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir
-/home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir
+/Users/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir
+/Users/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir

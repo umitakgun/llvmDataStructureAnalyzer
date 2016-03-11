@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp
+/Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp
 cxxabi.h
 -
 llvm/Pass.h
-/home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Pass.h
+/Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Pass.h
 llvm/IR/Function.h
-/home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/Function.h
+/Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/Function.h
 llvm/Support/raw_ostream.h
-/home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Support/raw_ostream.h
+/Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Support/raw_ostream.h
 llvm/IR/LegacyPassManager.h
-/home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/LegacyPassManager.h
+/Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/LegacyPassManager.h
 llvm/IR/InstrTypes.h
-/home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/InstrTypes.h
+/Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/InstrTypes.h
 llvm/Transforms/IPO/PassManagerBuilder.h
-/home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Transforms/IPO/PassManagerBuilder.h
+/Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Transforms/IPO/PassManagerBuilder.h
 llvm/IR/IRBuilder.h
-/home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/IRBuilder.h
+/Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/IRBuilder.h
 llvm/Transforms/Utils/BasicBlockUtils.h
-/home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Transforms/Utils/BasicBlockUtils.h
+/Users/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Transforms/Utils/BasicBlockUtils.h
 
 /usr/local/include/llvm-c/Core.h
 llvm-c/Support.h
@@ -237,8 +237,6 @@ utility
 -
 
 /usr/local/include/llvm/ADT/StringRef.h
-llvm/Support/Compiler.h
-/usr/local/include/llvm/ADT/llvm/Support/Compiler.h
 algorithm
 -
 cassert
@@ -288,8 +286,6 @@ iterator
 
 /usr/local/include/llvm/ADT/iterator_range.h
 utility
--
-iterator
 -
 
 /usr/local/include/llvm/Config/llvm-config.h
@@ -465,8 +461,6 @@ llvm/IR/GlobalVariable.h
 /usr/local/include/llvm/IR/llvm/IR/GlobalVariable.h
 llvm/IR/Instructions.h
 /usr/local/include/llvm/IR/llvm/IR/Instructions.h
-llvm/IR/Intrinsics.h
-/usr/local/include/llvm/IR/llvm/IR/Intrinsics.h
 llvm/IR/LLVMContext.h
 /usr/local/include/llvm/IR/llvm/IR/LLVMContext.h
 llvm/IR/Operator.h
@@ -537,16 +531,6 @@ llvm/Support/ErrorHandling.h
 /usr/local/include/llvm/IR/llvm/Support/ErrorHandling.h
 iterator
 -
-
-/usr/local/include/llvm/IR/Intrinsics.gen
-
-/usr/local/include/llvm/IR/Intrinsics.h
-llvm/ADT/ArrayRef.h
-/usr/local/include/llvm/IR/llvm/ADT/ArrayRef.h
-string
--
-llvm/IR/Intrinsics.gen
-/usr/local/include/llvm/IR/llvm/IR/Intrinsics.gen
 
 /usr/local/include/llvm/IR/LLVMContext.h
 llvm-c/Core.h
@@ -727,8 +711,8 @@ llvm/PassRegistry.h
 /usr/local/include/llvm/llvm/PassRegistry.h
 llvm/Support/Atomic.h
 /usr/local/include/llvm/llvm/Support/Atomic.h
-llvm/Support/Compiler.h
-/usr/local/include/llvm/llvm/Support/Compiler.h
+llvm/Support/Valgrind.h
+/usr/local/include/llvm/llvm/Support/Valgrind.h
 vector
 -
 
@@ -899,6 +883,14 @@ limits
 -
 
 /usr/local/include/llvm/Support/Threading.h
+
+/usr/local/include/llvm/Support/Valgrind.h
+llvm/Config/llvm-config.h
+/usr/local/include/llvm/Support/llvm/Config/llvm-config.h
+llvm/Support/Compiler.h
+/usr/local/include/llvm/Support/llvm/Support/Compiler.h
+stddef.h
+-
 
 /usr/local/include/llvm/Support/raw_ostream.h
 llvm/ADT/SmallVector.h
