@@ -15,6 +15,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.2.2/CMakeSystem.cmake"
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
+  "/usr/local/share/llvm/cmake/AddLLVM.cmake"
+  "/usr/local/share/llvm/cmake/LLVM-Config.cmake"
+  "/usr/local/share/llvm/cmake/LLVMConfig.cmake"
+  "/usr/local/share/llvm/cmake/LLVMConfigVersion.cmake"
+  "/usr/local/share/llvm/cmake/LLVMExports-release.cmake"
+  "/usr/local/share/llvm/cmake/LLVMExports.cmake"
+  "/usr/local/share/llvm/cmake/LLVMProcessSources.cmake"
   "/usr/share/cmake-3.2/Modules/AddFileDependencies.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c"
@@ -91,13 +98,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.2/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.2/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.2/Modules/Platform/UnixPaths.cmake"
-  "/usr/share/llvm-3.6/cmake/AddLLVM.cmake"
-  "/usr/share/llvm-3.6/cmake/LLVM-Config.cmake"
-  "/usr/share/llvm-3.6/cmake/LLVMConfig.cmake"
-  "/usr/share/llvm-3.6/cmake/LLVMConfigVersion.cmake"
-  "/usr/share/llvm-3.6/cmake/LLVMExports.cmake"
-  "/usr/share/llvm-3.6/cmake/LLVMParseArguments.cmake"
-  "/usr/share/llvm-3.6/cmake/LLVMProcessSources.cmake"
   )
 
 # The corresponding makefile is:

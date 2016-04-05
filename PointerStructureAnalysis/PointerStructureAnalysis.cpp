@@ -45,4 +45,9 @@ namespace {
 }  // namespace
 
 char PointerStructureAnalysis::ID = 0;
-static RegisterPass<PointerStructureAnalysis> X("pointerStructureAnalysis", "Pointer Structure Analyzer", false, false);
+static RegisterPass<PointerStructureAnalysis> registerPSPass("pointerStructureAnalysis", "Pointer Structure Analyzer", false, false);
+
+static void registerPointerStructureFunc(const PassManagerBuilder &, llvm::legacy::PassManagerBase &PM){
+  PM.add(new PointerStructureAnalysis());
+}
+static RegisterStandardPasses registerPointerStructurePass(PassManagerBuilder::EP_EarlyAsPossible, registerPointerStructureFunc);
