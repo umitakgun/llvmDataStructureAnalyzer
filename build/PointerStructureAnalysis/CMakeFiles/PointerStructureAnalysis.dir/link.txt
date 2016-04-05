@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -bundle -Wl,-headerpad_max_install_names -undefined dynamic_lookup -o libPointerStructureAnalysis.so CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.o 
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libPointerStructureAnalysis.so -o libPointerStructureAnalysis.so CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.o  -L/usr/lib/llvm-3.6/lib 
