@@ -1,0 +1,122 @@
+---------------------------------------------
+I find a function call
+Caller function main
+Caller function operator new(unsigned long)
+---------------------------------------------
+---------------------------------------------
+  %9 = load %class.LinkedList*, %class.LinkedList** %l, align 8
+main
+---------------------------------------------
+---------------------------------------------
+I find a function call
+Caller function main
+Caller function operator new(unsigned long)
+---------------------------------------------
+---------------------------------------------
+I find a function call
+Caller function main
+Caller function LinkedList::insertNode(Node*)
+---------------------------------------------
+---------------------------------------------
+I find a function call
+Caller function main
+Caller function operator delete(void*)
+---------------------------------------------
+---------------------------------------------
+I find a function call
+Caller function main
+Caller function operator delete(void*)
+---------------------------------------------
+---------------------------------------------
+  %22 = load i8*, i8** %4
+main
+---------------------------------------------
+---------------------------------------------
+  %23 = load i32, i32* %5
+main
+---------------------------------------------
+---------------------------------------------
+  %2 = load %class.LinkedList*, %class.LinkedList** %1
+Function : LinkedList::LinkedList()
+MangledName :_ZN10LinkedListC2Ev
+---------------------------------------------
+---------------------------------------------
+  %3 = load %class.LinkedList*, %class.LinkedList** %1
+Function : LinkedList::insertNode(Node*)
+MangledName :_ZN10LinkedList10insertNodeEP4Node
+---------------------------------------------
+---------------------------------------------
+  %3 = load %class.Node*, %class.Node** %1
+Function : Node::Node(int)
+MangledName :_ZN4NodeC2Ei
+---------------------------------------------
+---------------------------------------------
+  %5 = load i32, i32* %2, align 4
+Function : Node::Node(int)
+MangledName :_ZN4NodeC2Ei
+---------------------------------------------
+---------------------------------------------
+  %6 = getelementptr inbounds %class.Node, %class.Node* %3, i32 0, i32 1
+Function : Node::Node(int)
+MangledName :_ZN4NodeC2Ei
+---------------------------------------------
+---------------------------------------------
+  %2 = load %class.LinkedList*, %class.LinkedList** %1
+Function : LinkedList::~LinkedList()
+MangledName :_ZN10LinkedListD2Ev
+---------------------------------------------
+---------------------------------------------
+  %4 = load %class.LinkedList*, %class.LinkedList** %1
+Function : LinkedList::~LinkedList()
+MangledName :_ZN10LinkedListD0Ev
+---------------------------------------------
+---------------------------------------------
+I find a function call
+Caller function LinkedList::~LinkedList()
+Caller function operator delete(void*)
+---------------------------------------------
+---------------------------------------------
+I find a function call
+Caller function LinkedList::~LinkedList()
+Caller function operator delete(void*)
+---------------------------------------------
+---------------------------------------------
+  %13 = load i8*, i8** %2
+Function : LinkedList::~LinkedList()
+MangledName :_ZN10LinkedListD0Ev
+---------------------------------------------
+---------------------------------------------
+  %14 = load i32, i32* %3
+Function : LinkedList::~LinkedList()
+MangledName :_ZN10LinkedListD0Ev
+---------------------------------------------
+---------------------------------------------
+  %2 = load %class.Node*, %class.Node** %1
+Function : Node::~Node()
+MangledName :_ZN4NodeD2Ev
+---------------------------------------------
+---------------------------------------------
+  %4 = load %class.Node*, %class.Node** %1
+Function : Node::~Node()
+MangledName :_ZN4NodeD0Ev
+---------------------------------------------
+---------------------------------------------
+I find a function call
+Caller function Node::~Node()
+Caller function operator delete(void*)
+---------------------------------------------
+---------------------------------------------
+I find a function call
+Caller function Node::~Node()
+Caller function operator delete(void*)
+---------------------------------------------
+---------------------------------------------
+  %13 = load i8*, i8** %2
+Function : Node::~Node()
+MangledName :_ZN4NodeD0Ev
+---------------------------------------------
+---------------------------------------------
+  %14 = load i32, i32* %3
+Function : Node::~Node()
+MangledName :_ZN4NodeD0Ev
+---------------------------------------------

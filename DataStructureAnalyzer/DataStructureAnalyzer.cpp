@@ -1,11 +1,13 @@
 // Copyright [2015] Umit Akgun
 
 #include <cxxabi.h>
+#include <string>
 #include "llvm/Pass.h"
 #include "llvm/IR/Function.h"
 #include "llvm/Support/raw_ostream.h"
 #include "llvm/IR/LegacyPassManager.h"
 #include "llvm/IR/InstrTypes.h"
+#include "llvm/IR/Instructions.h"
 #include "llvm/Transforms/IPO/PassManagerBuilder.h"
 #include "llvm/IR/IRBuilder.h"
 #include "llvm/Transforms/Utils/BasicBlockUtils.h"
@@ -17,6 +19,43 @@ namespace {
     static char ID;
     DataStructureAnalyzerPass() : FunctionPass(ID) {}
 
+    void writeInst(Instruction& inst) {
+      errs() << "---------------------------------------------\n";
+      inst.dump();
+      StringRef funcStr = inst.getParent()->getParent()->getName();
+      std::string mangledName = funcStr.str();
+      auto fName = abi::__cxa_demangle(mangledName.c_str(), NULL, NULL, NULL);
+      if (fName != NULL) {
+        errs() << "Function : " << fName << "\n";
+        errs() << "MangledName :" << funcStr.str() << "\n";
+      } else {
+        errs() << funcStr.str() << "\n";
+      }
+      errs() << "---------------------------------------------\n";
+    }
+
+    void createCallInstNode(const Function &F, CallInst* callInst) {
+      errs() << "---------------------------------------------\n";
+      errs().write_escaped("I find a function call") << "\n";
+      auto callerName = F.getName().str();
+      auto calledName = callInst->getCalledFunction()->getName().str();
+
+      auto callName = abi::__cxa_demangle(callerName.c_str(), NULL, NULL, NULL);
+      if ( NULL != callName ) {
+        errs() << "Caller function " << callName << "\n";
+      } else {
+        errs() << "Caller function " << callerName << "\n";
+      }
+      callName = abi::__cxa_demangle(calledName.c_str(), NULL, NULL, NULL);
+      if ( NULL != callName ) {
+        errs() << "Caller function " << callName << "\n";
+      } else {
+        errs() << "Caller function " << calledName << "\n";
+      }
+
+      errs() << "---------------------------------------------\n";
+    }
+
     bool runOnFunction(Function &F) override {
       // errs().write_escaped(F.getName()) << '\n';
       // errs() << "Function Body\n";
@@ -26,27 +65,12 @@ namespace {
         // errs().write_escaped("Basic Block") << '\n';
         // BB.dump();
         for (Instruction& inst : BB) {
-          // errs() << "Instruction\n";
-          if (CallInst* callInst = dyn_cast<CallInst>(&inst)) {
-            errs() << "---------------------------------------------\n";
-            errs().write_escaped("I find a function call") << "\n";
-            auto callerName = F.getName().str();
-            auto calledName = callInst->getCalledFunction()->getName().str();
-
-            auto callName = abi::__cxa_demangle(callerName.c_str(), NULL, NULL, NULL);
-            if ( NULL != callName ) {
-              errs() << "Caller function " << callName << "\n";
-            } else {
-              errs() << "Caller function " << callerName << "\n";
-            }
-            callName = abi::__cxa_demangle(calledName.c_str(), NULL, NULL, NULL);
-            if ( NULL != callName ) {
-              errs() << "Caller function " << callName << "\n";
-            } else {
-              errs() << "Caller function " << calledName << "\n";
-            }
-
-            errs() << "---------------------------------------------\n";
+          if (GetElementPtrInst* gepInst = dyn_cast<GetElementPtrInst>(&inst)) {
+            writeInst(inst);
+          } else if (CallInst* callInst = dyn_cast<CallInst>(&inst)) {
+            createCallInstNode(F, callInst);
+          } else if (LoadInst* loadInst = dyn_cast<LoadInst>(&inst)) {
+            writeInst(inst);
           }
         }
       }

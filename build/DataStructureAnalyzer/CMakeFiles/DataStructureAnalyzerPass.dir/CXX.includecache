@@ -9,6 +9,8 @@
 /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp
 cxxabi.h
 -
+string
+-
 llvm/Pass.h
 /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Pass.h
 llvm/IR/Function.h
@@ -19,6 +21,8 @@ llvm/IR/LegacyPassManager.h
 /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/LegacyPassManager.h
 llvm/IR/InstrTypes.h
 /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/InstrTypes.h
+llvm/IR/Instructions.h
+/home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/IR/Instructions.h
 llvm/Transforms/IPO/PassManagerBuilder.h
 /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/llvm/Transforms/IPO/PassManagerBuilder.h
 llvm/IR/IRBuilder.h
