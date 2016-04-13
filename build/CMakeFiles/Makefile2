@@ -74,7 +74,7 @@ DataStructureAnalyzer/preinstall:
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/all:
 	$(MAKE) -f DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/build.make DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/depend
 	$(MAKE) -f DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/build.make DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles  1 2
 	@echo "Built target DataStructureAnalyzerPass"
 .PHONY : DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/all
 
@@ -84,7 +84,7 @@ all: DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/all
 
 # Build rule for subdir invocation for target.
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles 0
 .PHONY : DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/rule
@@ -124,7 +124,7 @@ PointerStructureAnalysis/preinstall:
 PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/all:
 	$(MAKE) -f PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/build.make PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/depend
 	$(MAKE) -f PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/build.make PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles  3
 	@echo "Built target PointerStructureAnalysis"
 .PHONY : PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/all
 

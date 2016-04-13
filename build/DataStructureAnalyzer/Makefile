@@ -115,6 +115,30 @@ DataStructureAnalyzerPass/fast:
 	cd /home/umit/research/llvmDataStructureAnalyzer/build && $(MAKE) -f DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/build.make DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/build
 .PHONY : DataStructureAnalyzerPass/fast
 
+CGAnalyzer.o: CGAnalyzer.cpp.o
+.PHONY : CGAnalyzer.o
+
+# target to build an object file
+CGAnalyzer.cpp.o:
+	cd /home/umit/research/llvmDataStructureAnalyzer/build && $(MAKE) -f DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/build.make DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.o
+.PHONY : CGAnalyzer.cpp.o
+
+CGAnalyzer.i: CGAnalyzer.cpp.i
+.PHONY : CGAnalyzer.i
+
+# target to preprocess a source file
+CGAnalyzer.cpp.i:
+	cd /home/umit/research/llvmDataStructureAnalyzer/build && $(MAKE) -f DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/build.make DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.i
+.PHONY : CGAnalyzer.cpp.i
+
+CGAnalyzer.s: CGAnalyzer.cpp.s
+.PHONY : CGAnalyzer.s
+
+# target to generate assembly for a file
+CGAnalyzer.cpp.s:
+	cd /home/umit/research/llvmDataStructureAnalyzer/build && $(MAKE) -f DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/build.make DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.s
+.PHONY : CGAnalyzer.cpp.s
+
 DataStructureAnalyzer.o: DataStructureAnalyzer.cpp.o
 .PHONY : DataStructureAnalyzer.o
 
@@ -148,6 +172,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DataStructureAnalyzerPass"
+	@echo "... CGAnalyzer.o"
+	@echo "... CGAnalyzer.i"
+	@echo "... CGAnalyzer.s"
 	@echo "... DataStructureAnalyzer.o"
 	@echo "... DataStructureAnalyzer.i"
 	@echo "... DataStructureAnalyzer.s"

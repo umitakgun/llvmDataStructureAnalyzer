@@ -1,8 +1,13 @@
 // Copyright [2015] Umit
 
+#include <iostream>
+
 class Node{
  public:
+  Node *next;
+
   Node() {
+    this->next = NULL;
   }
   virtual ~Node() {
   }
@@ -25,6 +30,7 @@ class Node{
 
 class LinkedList{
  public:
+  Node *head;
   LinkedList() {
   }
 
@@ -32,14 +38,29 @@ class LinkedList{
   }
 
   void insertNode(Node *newNode) {
+    if (head == NULL) {
+      head = newNode;
+    } else {
+      Node *tail;
+      for (tail = head->next; tail->next != NULL; tail = tail->next) { }
+      tail->next = newNode;
+    }
   }
 
   void deleteNode(Node *deleteNode) {
+  }
+
+  void releaseNodes(Node *head) {
+    if (head->next != NULL) {
+      releaseNodes(head->next);
+    }
+    deleteNode(head);
   }
 };
 
 int main(int argc, char *argv[]) {
   LinkedList* l = new LinkedList();
   l->insertNode(new Node(5));
+  l->releaseNodes(l->head);
   return 0;
 }

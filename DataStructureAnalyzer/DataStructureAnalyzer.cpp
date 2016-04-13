@@ -2,7 +2,9 @@
 
 #include <cxxabi.h>
 #include <string>
+#include <vector>
 #include "llvm/Pass.h"
+#include "llvm/Analysis/CallGraphSCCPass.h"
 #include "llvm/IR/Function.h"
 #include "llvm/Support/raw_ostream.h"
 #include "llvm/IR/LegacyPassManager.h"
@@ -11,14 +13,12 @@
 #include "llvm/Transforms/IPO/PassManagerBuilder.h"
 #include "llvm/IR/IRBuilder.h"
 #include "llvm/Transforms/Utils/BasicBlockUtils.h"
+#include "llvm/ADT/SCCIterator.h"
 
 using namespace llvm;
 
 namespace {
-  struct DataStructureAnalyzerPass : public FunctionPass {
-    static char ID;
-    DataStructureAnalyzerPass() : FunctionPass(ID) {}
-
+  class DataStructureAnalyzerPass : public FunctionPass {
     void writeInst(Instruction& inst) {
       errs() << "---------------------------------------------\n";
       inst.dump();
@@ -61,22 +61,36 @@ namespace {
       // errs() << "Function Body\n";
       // F.dump();
 
-      for (BasicBlock&  BB : F) {
+      for (BasicBlock &BB : F) {
         // errs().write_escaped("Basic Block") << '\n';
         // BB.dump();
-        for (Instruction& inst : BB) {
-          if (GetElementPtrInst* gepInst = dyn_cast<GetElementPtrInst>(&inst)) {
+        for (Instruction &inst : BB) {
+          if (GetElementPtrInst *gepInst = dyn_cast<GetElementPtrInst>(&inst)) {
             writeInst(inst);
-          } else if (CallInst* callInst = dyn_cast<CallInst>(&inst)) {
+          } else if (CallInst *callInst = dyn_cast<CallInst>(&inst)) {
             createCallInstNode(F, callInst);
-          } else if (LoadInst* loadInst = dyn_cast<LoadInst>(&inst)) {
+          } else if (LoadInst *loadInst = dyn_cast<LoadInst>(&inst)) {
             writeInst(inst);
           }
         }
       }
 
+      for (scc_iterator<Function *> begin_it = scc_begin(&F),
+                                    end_it = scc_end(&F);
+           begin_it != end_it; ++begin_it) {
+        std::vector<BasicBlock *> scc_list = *begin_it;
+        for (BasicBlock *BB : scc_list) {
+          BB->printAsOperand(errs(), false);
+          errs() << " -> ";
+        }
+        errs() << "\n";
+      }
+
       return false;  // we didn't change anything
     }
+   public:
+    static char ID;
+    DataStructureAnalyzerPass() : FunctionPass(ID) {}
   };
 }  // namespace
 
@@ -85,5 +99,6 @@ static RegisterPass<DataStructureAnalyzerPass> registerDSPass("dataStructureAnal
 
 static void registerDataStructureFunc(const PassManagerBuilder &, llvm::legacy::PassManagerBase &PM) {
   PM.add(new DataStructureAnalyzerPass());
+  //  PM.add(new CGAnalyzerPass());
 }
 static RegisterStandardPasses registerDataStructurePass(PassManagerBuilder::EP_EarlyAsPossible, registerDataStructureFunc);

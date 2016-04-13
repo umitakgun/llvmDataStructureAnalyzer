@@ -1,0 +1,47 @@
+// Copyright [2015] Umit Akgun
+
+#include <cxxabi.h>
+#include <string>
+#include "llvm/Pass.h"
+#include "llvm/Analysis/CallGraphSCCPass.h"
+#include "llvm/Analysis/CallGraph.h"
+#include "llvm/IR/Function.h"
+#include "llvm/Support/raw_ostream.h"
+#include "llvm/IR/LegacyPassManager.h"
+#include "llvm/IR/InstrTypes.h"
+#include "llvm/IR/Instructions.h"
+#include "llvm/Transforms/IPO/PassManagerBuilder.h"
+#include "llvm/IR/IRBuilder.h"
+#include "llvm/Transforms/Utils/BasicBlockUtils.h"
+
+using namespace llvm;
+
+namespace {
+  class CGAnalyzerPass : public CallGraphSCCPass {
+    bool runOnSCC(CallGraphSCC &SCC) {
+      for (auto it = SCC.begin(); it != SCC.end(); ++it) {
+        Function* func = (*it)->getFunction();
+        if (func) {
+          errs() << func->getName();
+        }
+      }
+      errs() << "\n";
+      return false;
+    }
+
+    void getAnalysisUsage(AnalysisUsage& au) const override {
+      au.addRequired<CallGraphWrapperPass>();
+    }
+   public:
+    static char ID;
+    CGAnalyzerPass() : CallGraphSCCPass(ID) {}
+  };
+}
+
+char CGAnalyzerPass::ID = 0;
+static RegisterPass<CGAnalyzerPass> registerCGPass("CGAnalyze", "Data Structure Analyzer", false, false);
+
+// static void registerCGDataStructureFunc(const PassManagerBuilder &, llvm::legacy::PassManagerBase &PM) {
+//   PM.add(new CGAnalyzerPass());
+// }
+// static RegisterStandardPasses registerCGDataStructurePass(PassManagerBuilder::EP_EarlyAsPossible, registerCGDataStructureFunc);

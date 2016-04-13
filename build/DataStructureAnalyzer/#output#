@@ -8,7 +8,6 @@ I find a function call
 Caller function __cxx_global_var_init
 Caller function __cxa_atexit
 ---------------------------------------------
-%0 -> 
 ---------------------------------------------
 I find a function call
 Caller function main
@@ -67,18 +66,11 @@ main
   %27 = load i32, i32* %5
 main
 ---------------------------------------------
-%12 -> 
-%25 -> 
-%21 -> 
-%8 -> 
-%17 -> 
-%0 -> 
 ---------------------------------------------
   %2 = load %class.LinkedList*, %class.LinkedList** %1
 Function : LinkedList::LinkedList()
 MangledName :_ZN10LinkedListC2Ev
 ---------------------------------------------
-%0 -> 
 ---------------------------------------------
   %3 = load %class.LinkedList*, %class.LinkedList** %1
 Function : LinkedList::insertNode(Node*)
@@ -169,12 +161,6 @@ MangledName :_ZN10LinkedList10insertNodeEP4Node
 Function : LinkedList::insertNode(Node*)
 MangledName :_ZN10LinkedList10insertNodeEP4Node
 ---------------------------------------------
-%29 -> 
-%7 -> 
-%25 -> 
-%21 -> %20 -> %15 -> 
-%10 -> 
-%0 -> 
 ---------------------------------------------
   %3 = load %class.Node*, %class.Node** %1
 Function : Node::Node(int)
@@ -190,7 +176,6 @@ MangledName :_ZN4NodeC2Ei
 Function : Node::Node(int)
 MangledName :_ZN4NodeC2Ei
 ---------------------------------------------
-%0 -> 
 ---------------------------------------------
   %3 = load %class.LinkedList*, %class.LinkedList** %1
 Function : LinkedList::releaseNodes(Node*)
@@ -241,15 +226,11 @@ I find a function call
 Caller function LinkedList::releaseNodes(Node*)
 Caller function LinkedList::deleteNode(Node*)
 ---------------------------------------------
-%12 -> 
-%8 -> 
-%0 -> 
 ---------------------------------------------
   %2 = load %class.LinkedList*, %class.LinkedList** %1
 Function : LinkedList::~LinkedList()
 MangledName :_ZN10LinkedListD2Ev
 ---------------------------------------------
-%0 -> 
 ---------------------------------------------
   %4 = load %class.LinkedList*, %class.LinkedList** %1
 Function : LinkedList::~LinkedList()
@@ -275,16 +256,11 @@ MangledName :_ZN10LinkedListD0Ev
 Function : LinkedList::~LinkedList()
 MangledName :_ZN10LinkedListD0Ev
 ---------------------------------------------
-%5 -> 
-%12 -> 
-%7 -> 
-%0 -> 
 ---------------------------------------------
   %2 = load %class.Node*, %class.Node** %1
 Function : Node::~Node()
 MangledName :_ZN4NodeD2Ev
 ---------------------------------------------
-%0 -> 
 ---------------------------------------------
   %4 = load %class.Node*, %class.Node** %1
 Function : Node::~Node()
@@ -310,46 +286,14 @@ MangledName :_ZN4NodeD0Ev
 Function : Node::~Node()
 MangledName :_ZN4NodeD0Ev
 ---------------------------------------------
-%5 -> 
-%12 -> 
-%7 -> 
-%0 -> 
 ---------------------------------------------
   %3 = load %class.LinkedList*, %class.LinkedList** %1
 Function : LinkedList::deleteNode(Node*)
 MangledName :_ZN10LinkedList10deleteNodeEP4Node
 ---------------------------------------------
-%0 -> 
 ---------------------------------------------
 I find a function call
 Caller function _GLOBAL__sub_I_test.cpp
 Caller function __cxx_global_var_init
 ---------------------------------------------
-%0 -> 
------------------- Call Graph Analysis -----------------------------
-__cxx_global_var_init's #reference : 1
-__cxx_global_var_init->
-_GLOBAL__sub_I_test.cpp's #reference : 4245187752
-_GLOBAL__sub_I_test.cpp->
-
-BCÀÞ!  Ä  ‚        #‘AÈI29’„%‹b€EB’BÄ28K
-2bˆH CFˆ¥ 2BäH#ÄPAQŒáƒåŠ1FQ    t$øÿÿÿÿ ‡t˜‡pv(‡6 ‡pHvhƒqv`‡y Ì!ØaÊ Ø¡æaÚ ä¡Æ!æ¡ÚÀà¡Â sv˜‡r wx‡60y‡v(‡6€‡wHw ‡r‡6(vH‡v èAê¡€ÁÞ¡ÌAÂ¡Ê¡àáÒÁè¡ä¡ÊÒ¡ÚÀÞÁÚ€Ê!Ì ÜáÚ ÜÁæ¡ÌÚ ÂÐ0‡p`‡y(€p‡whww˜‡60xhƒvz@ÀÂæ¡ bè!ÆaÚ äáè¡ÆÞAÚ@êÁÌ¡ä¡æ!ô¡ < zy8‡r ‡6x¨ ðÀÚÀè  è!äáÊÚÀÊ!è¡ä¡æXƒy˜‡r`ƒ5˜‡y(9 ˆzp‡ys(‡60xhƒvz@ÀÂæ¡ ¢æ¡Ú`ÞÁè¡ÌÞ!è0‡p`‡y(`!üÿÿÿÿ Hxdøÿÿÿÿ‚ÒaÂAØ¡Ú€Â!Ø¡Æ!Øæ0‡p`‡y(€`‡r˜‡yhx‡r‡t˜‡rhs€‡vr Ì!ØaÊ ÜáÚÀä!Ú¡Ú Þ!ÜÊAÚ Ø!Ú y¨‡r wx‡60y‡v(‡6€‡wHw ‡r‡6(vH‡vhwxwhv(‡p0€p‡whƒtps˜‡60xhƒvz@ÀÂæ¡ ÂÞ¡Ü!ÜaÚÀà¡Ú!è sv˜‡r ˆy ‡p‡uhx‡w ‡rzxyhq¨s0‡r‡6˜‡tÐ‡r ð  è!äáÊÚ`à¡ |À;h; € ‡p‡s(zhs(‡p ‡z‡r˜`æaÊÖ`æ¡ä  êÁæ!Ì¡ÚÀà¡Ú!è sv˜‡r ˆz˜‡rhƒyxs ‡60vx‡p ÀÂæ¡€ É)þÿÿÿ ‚ÒaÂAØ¡Ú€Â!Ø¡Æ!Øæ0‡p`‡y(€`‡r˜‡yhx‡r‡t˜‡rhs€‡vr Ì!ØaÊ ÜáÚÀä!Ú¡Ú Þ!ÜÊAÚ Ø!Ú y¨‡r wx‡60y‡v(‡6€‡wHw ‡r‡6(vH‡vhwxwhv(‡p0€p‡whƒtps˜‡60xhƒvz@ÀÂæ¡ ÂÞ¡Ü!ÜaÚÀà¡Ú!è sv˜‡r ˆy ‡p‡uhx‡w ‡rzxyhq¨s0‡r‡6˜‡tÐ‡r ð  è!äáÊÚ`à¡ |À;h; € ‡p‡s(zhs(‡p ‡z‡r˜`æaÊÖ`æ¡ä  êÁæ!Ì¡ÚÀà¡Ú!è sv˜‡r ˆz˜‡rhƒyxs ‡60vx‡p ÀÂæ¡€>büÿÿÿÿ H@äóâÀåÐôéÀm0áÀì0€9„;ÌC9 ;”Ã<ÌCÀƒ<”Ã8¤Ã<”C˜<´C8`áÀóP áïÐæ áÐåÐððéàôPòÐåÀéÐ =ÈC=”0¸Ã;´9ÈC8´C9´<¼C:¸=”ƒ<´A9°C:´C¸Ã;¸C°C9„ƒ9 „;¼C¤ƒ;˜Ã<´9ÀC´C8Ð: æì0å îðmàáàóÐæ mÐá@è ˜C8°Ã<”@Ì=„Ã8¬CÀƒ<¼=”Ã8ÐÃ;ÈCˆC=˜ƒ9”ƒ<´Á<¤ƒ>”€ Aá çPôÐã õ àØAØ =„ƒ<œC9ÐC˜C9„=Ôƒ<”Ã< k0óPl°ó0å  Qî0á`åÐæ mÐá@è ˜C8°Ã<”@ÔÃ<”CÌÃ;˜=´9°Ã;„= æì0å lð‘ãÿÿÿÿ@$‚ÒaÂAØ¡Ú€Â!Ø¡Æ!Øæ0‡p`‡y(€`‡r˜‡yhx‡r‡t˜‡rhs€‡vr Ì!ØaÊ ÜáÚÀä!Ú¡Ú Þ!ÜÊAÚ Ø!Ú y¨‡r wx‡60y‡v(‡6€‡wHw ‡r‡6(vH‡vhwxwhv(‡p0€p‡whƒtps˜‡60xhƒvz@ÀÂæ¡ ÂÞ¡Ü!ÜaÚÀà¡Ú!è sv˜‡r ˆy ‡p‡uhx‡w ‡rzxyhq¨s0‡r‡6˜‡tÐ‡r ð  è!äáÊÚ`à¡ |À;h; € ‡p‡s(zhs(‡p ‡z‡r˜`æaÊÖ`æ¡ä  êÁæ!Ì¡ÚÀà¡Ú!è sv˜‡r ˆz˜‡rhƒyxs ‡60vx‡p ÀÂæ¡€òÿÿÿÿ0Œäÿÿÿÿ` 	  I     ‚`B L†	QLŒ	Á1A 	A ‰   5   2"ˆ	 d…#¤„#ã„¡LŒŒ„ÄLàÁ2S6ìó0n0ô@z éðóðâóPz ©àé@( (  	"hÈ€#%i Ð2G # %pè1C‘TG ªÎ@V!šk+CÓ¤Í€BŽº4ôHd § Iþé&B±@’üib(iBB(RYÇ¤³Ž)RZGlh-‚#R;@dNh„¡¡pŽ     c¤ ú] [ˆ8`…tp‡u(r`…t˜z#Ð/è-ÌBÀ+¤ƒ;¬C9+¤Ã<ÐÃ)€~Ah!â X!ÜaÊX!æÆ,Aòº@¶@®ðäPc– ù] …Y Wxr(‡1Kü‚.ÐB*Ð+¼9”Ã˜*˜~A\!à€ÒÁÖ¡ÈÒaèaä ìabðºà
-q ¬î°å@¬ó@q éàóPò@®ðäP¥ tà
-ï@å0Æ	˜_ÐW Wxr(‡QƒRH‡1fÁ/è‚+Ä°B:¸Ã:”9°B:Ì=ÄÈC9°C9„Ã<”ƒ+¼9”Ã<”,Ð+¼9”Ã˜*˜~A\!à€ÒÁÖ¡ÈÒaèä ìaLL¿ ®pÀ
-éàëPäÀ
-é0ô@
-pP
-ö0Æ	˜_ÐW Wxr(RƒR°‡1NÀü‚.¸¸Â;C9”‚=Œ!ƒ@~A\!à€ÒÁÖ¡ÈÒaè!à€ÊÊÊÁÞÊ¡`\áÈ¡&`ø€vðv@mPî°îð÷àmÀéàõ€mpîPÊ Ú ô Ú ì€ôÀè Ìà@â@ð Üô ì@æ@ôÀè f!ä V4n@å€ôàó@á ôPð ó@
-2RdH`º `Cb0   p €Ì1ŒÁ    €°ƒI†4˜     v0ÄÐ @  ÄfÜ`     ØÁ$L     ”Âò< 0@      0ä¡€        `ÈC       À@       €! À       ÐÁ§€       €!Ï ÀT   p Àç        €!€       Cž4 €©     €!Ï ÀT    À' `    P `Ès 0   , 0ä9 ˜ €  €†<m  S!   @ Cž6 €i   Àè`È“ 0    < 0äy `€         !   2˜LŒ	&GÆC
-F h°U
-lQ[ô‚$:ïéX¦¦K¤Qˆ¡D¤‰¸" c¨b0nh°5H¨ a¨ã@ˆÆ3 …ò¤ÁVA°u1lÝ"èRu¥eüt‚†¡Ž…93hÌ€J—šòÿ? xëHÂ ¦ÁŒ  y     LFÄ9cs;±+“›K{s™q¹qA¡;›{‘*b*
-š*úš¹y1Ksc‘±¡™¡‰IÙUØØìÚ\ÒÈÊÜè¦   y  B   3€Äáf=ˆC8„ÃŒB€yxs˜qæ íô€3BÂÁÎ¡f0=ˆC8„ƒÌ=ÈC=Œ=ÌxŒtp{yH‡ppzpvx‡p ‡Ììá0n0ãððP3ÄÞ!Ø!Âaf0‰;¼ƒ;ÐC9´<¼ƒ<„;Ìðv`{h7h‡rh7€‡p‡p`v(vøvx‡w€‡_‡q‡r˜‡y˜,îðîàõÀì0bÈ¡ä¡Ì¡ä¡ÜaÊ!ÄÊaÖC9ÈC9˜C9ÈC9¸Ã8”C8ˆ;”Ã/¼ƒ<ü‚;Ô;°  q   m   ÆpýóÉN<âH H.6ÈÔÕ^eÌ?Ÿøég{ˆ%DËR1¾±8°üÂäD’MˆÁ?Ÿ5]"B%"M54M§3^ŠŸÎ@ØÅôÏgM—H£C‰HSG{•YLÿ|Öt‰4
-1”ˆ4u¶W€óÏìTòÿ8HƒLÀüÿ 9ÿ4ÃB˜BõÿÂuýÆâÀòW@ô#2™AòÏí‹ŸÎ@ØÂõÏ';ñˆ#ý ¸Ø W{•”Á?·ïYÓÿ/\ U]ïÿ/,€$ýö?ÒŽgbðÏgM—H£C‰HSMÄBLÄé„—â§3æ@0 ÒXüóYÓ%Ò(ÄP"ÒTÛ±€DœÎ@H^ŠŸÎ@XóÿÂüÀD\ÈdÐ?·bM—H£C‰H“=ÿÜXŒALÿ|Öt‰4
-1”ˆ4q¶W™„ñÏÃ’V†üs+â§3¶qý`‰nZùÿüâ?ÒäÏcÌ?ŸøéDg{•EPÿo\×ÿ‘ä4À‚LØ_ÑF ýsËÖt‰4
-1”ˆ4YóÏ'~:ÑÑ^eÐ?·oM—H£C‰H“$ÿÜ²øé   a      A,      tÙV4uÐ˜Ac  # ‚`@­Œ‚–BP      †          a   N   F,      Ô” qR0Ô”Õ3    3Mc£0Ñ4v0
-3Fc¤0aÂLÄÐØ(ÌD4€Â°al 0l@Í C #Å‚`ÐÉr¹Ó "ÁpsE@ T˜dÄ 8@º:`.w AD Ö@‚fÄÀ @Ò`†€“Pb’]HˆdÄÀ @Ò ˆ É`Þ`¨ƒ M€a¢	 `4A†ˆ& €ƒA0°ö€™%(æ†:€Ñ„ 6    F„`Ø€€ 1(Ë˜Y‚‚¢PÔ€ÙL f!˜3‚p    VC ‘Q™O°D†   !1     ˆ @a Â     a      A,      Ô” q# du…ÀÙ7Ú7    3fÐÔ)A ˜à{‡ˆ€      FCL"      a   3   H,      Ô” ‰#   3fÐØ)ÌDˆAc¤0!Â°10l@Ð`‚]eP ’á†à ƒY†@ÈÉ.‡BS†ˆ@ €Y‚c—ƒ±-ˆd“CÐ5ˆdØ€X˜%hÉ&‡  
-D2ÜDa0Ë@Á,AAH69d@Q ’aB
-`–` I$4‰d“C€Ø°0Kp`8      Vs4„u:a4Ät ’é€,      a   "   A,      Ô” q# du…ÁÝ7Ú8Ô 3bÐØ)ÌD4ŒÂ°!$0l@È  ‚ì6  hhÆ&‡A3†ˆ@    VÃ 2!ÀòE1ˆ   !1     ! æ`Á     a   '   C,      Ô” ‰#   3fÐØ)ÌDˆAc¤0l@AA $˜€‘lr,ƒ‘7GÌ2B@†H69šBHF Á Ú 	f	JD2b`  iI€á@    VC01ˆ !1     (  
-ã@eq(’„iÌ       a      A,      Ô”  3fÐÔ)Á@ ˜ Ã     FCL"      a   )   D,      Ô” Õ3   3fÐÔ)ÌDM€ÂLDÓÔ(ƒA 4˜`š A$Î ‚†1(Kœ7ê  F`Ø€0 M‚aÂ àŠaG
-ÁÀrƒ`–` d „4`¶€Ù†@æ‚      FCL"  !1     † °        a      A,      Ô”  3bÐÔ)Á@ ˆ Ã     FCL"      a   )   D,      Ô” Õ3   3bÐÔ)ÌDM€ÂLDÓÔ(ƒA 4ˆ`š A$Ú`‚†1(Kœ7ê  F`Ø€0 M‚aÂ àŠaG
-ÁÀrƒ`–` d „4`¶€Ù†@æ‚      FCL"  !1     † À        a      A,      Ô”  3fÐØ)ÌDˆAc¤0l@A $˜ Ã    FCL"Y21§3 !1     Æ ŒI¬Ë„(”…iœ’¦ˆª´ë¼ÂÀ     a      Áˆ€ <j€        
+makopt: symbol lookup error: ./libDataStructureAnalyzerPass.so: undefined symbol: _ZNK4llvm9CallGraph4dumpEv

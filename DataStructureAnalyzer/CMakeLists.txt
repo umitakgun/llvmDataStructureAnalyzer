@@ -1,5 +1,6 @@
 add_library(DataStructureAnalyzerPass MODULE
     # List your source files here.
+    CGAnalyzer.cpp
     DataStructureAnalyzer.cpp
 )
 

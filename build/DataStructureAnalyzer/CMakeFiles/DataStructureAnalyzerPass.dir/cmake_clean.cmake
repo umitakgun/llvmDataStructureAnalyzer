@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.o"
   "CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.o"
   "libDataStructureAnalyzerPass.pdb"
   "libDataStructureAnalyzerPass.so"

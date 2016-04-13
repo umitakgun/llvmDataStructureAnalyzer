@@ -1,0 +1,26 @@
+// Copyright [2015] Umit Akgun
+
+#include <cxxabi.h>
+#include <string>
+#include "llvm/Pass.h"
+#include "llvm/Analysis/CallGraphSCCPass.h"
+#include "llvm/IR/Function.h"
+#include "llvm/Support/raw_ostream.h"
+#include "llvm/IR/LegacyPassManager.h"
+#include "llvm/IR/InstrTypes.h"
+#include "llvm/IR/Instructions.h"
+#include "llvm/Transforms/IPO/PassManagerBuilder.h"
+#include "llvm/IR/IRBuilder.h"
+#include "llvm/Transforms/Utils/BasicBlockUtils.h"
+
+class CGAnalyzerPass : public llvm::CallGraphSCCPass {
+  static char ID;
+  bool runOnSCC(llvm::CallGraphSCC &SCC) {
+    examineSCC(SCC);
+  }
+
+  bool examineSCC(llvm::CallGraphSCC &SCC);
+
+public:
+  CGAnalyzerPass() : CallGraphSCCPass(ID) {}
+};
