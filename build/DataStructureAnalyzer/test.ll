@@ -12,7 +12,7 @@ $_ZN10LinkedList10insertNodeEP4Node = comdat any
 
 $_ZN4NodeC2Ei = comdat any
 
-$_ZN10LinkedList12releaseNodesEP4Node = comdat any
+$_ZN10LinkedList12releaseNodesEP4Nodeb = comdat any
 
 $_ZN10LinkedListD2Ev = comdat any
 
@@ -74,7 +74,7 @@ define i32 @main(i32 %argc, i8** %argv) #2 personality i8* bitcast (i32 (...)* @
   %6 = call noalias i8* @_Znwm(i64 16) #6
   %7 = bitcast i8* %6 to %class.LinkedList*
   invoke void @_ZN10LinkedListC2Ev(%class.LinkedList* %7)
-          to label %8 unwind label %17
+          to label %8 unwind label %21
 
 ; <label>:8                                       ; preds = %0
   store %class.LinkedList* %7, %class.LinkedList** %l, align 8
@@ -82,7 +82,7 @@ define i32 @main(i32 %argc, i8** %argv) #2 personality i8* bitcast (i32 (...)* @
   %10 = call noalias i8* @_Znwm(i64 24) #6
   %11 = bitcast i8* %10 to %class.Node*
   invoke void @_ZN4NodeC2Ei(%class.Node* %11, i32 5)
-          to label %12 unwind label %21
+          to label %12 unwind label %25
 
 ; <label>:12                                      ; preds = %8
   call void @_ZN10LinkedList10insertNodeEP4Node(%class.LinkedList* %9, %class.Node* %11)
@@ -90,35 +90,39 @@ define i32 @main(i32 %argc, i8** %argv) #2 personality i8* bitcast (i32 (...)* @
   %14 = load %class.LinkedList*, %class.LinkedList** %l, align 8
   %15 = getelementptr inbounds %class.LinkedList, %class.LinkedList* %14, i32 0, i32 1
   %16 = load %class.Node*, %class.Node** %15, align 8
-  call void @_ZN10LinkedList12releaseNodesEP4Node(%class.LinkedList* %13, %class.Node* %16)
+  %17 = load %class.LinkedList*, %class.LinkedList** %l, align 8
+  %18 = getelementptr inbounds %class.LinkedList, %class.LinkedList* %17, i32 0, i32 1
+  %19 = load %class.Node*, %class.Node** %18, align 8
+  %20 = icmp eq %class.Node* %19, null
+  call void @_ZN10LinkedList12releaseNodesEP4Nodeb(%class.LinkedList* %13, %class.Node* %16, i1 zeroext %20)
   ret i32 0
 
-; <label>:17                                      ; preds = %0
-  %18 = landingpad { i8*, i32 }
-          cleanup
-  %19 = extractvalue { i8*, i32 } %18, 0
-  store i8* %19, i8** %4
-  %20 = extractvalue { i8*, i32 } %18, 1
-  store i32 %20, i32* %5
-  call void @_ZdlPv(i8* %6) #7
-  br label %25
-
-; <label>:21                                      ; preds = %8
+; <label>:21                                      ; preds = %0
   %22 = landingpad { i8*, i32 }
           cleanup
   %23 = extractvalue { i8*, i32 } %22, 0
   store i8* %23, i8** %4
   %24 = extractvalue { i8*, i32 } %22, 1
   store i32 %24, i32* %5
-  call void @_ZdlPv(i8* %10) #7
-  br label %25
+  call void @_ZdlPv(i8* %6) #7
+  br label %29
 
-; <label>:25                                      ; preds = %21, %17
-  %26 = load i8*, i8** %4
-  %27 = load i32, i32* %5
-  %28 = insertvalue { i8*, i32 } undef, i8* %26, 0
-  %29 = insertvalue { i8*, i32 } %28, i32 %27, 1
-  resume { i8*, i32 } %29
+; <label>:25                                      ; preds = %8
+  %26 = landingpad { i8*, i32 }
+          cleanup
+  %27 = extractvalue { i8*, i32 } %26, 0
+  store i8* %27, i8** %4
+  %28 = extractvalue { i8*, i32 } %26, 1
+  store i32 %28, i32* %5
+  call void @_ZdlPv(i8* %10) #7
+  br label %29
+
+; <label>:29                                      ; preds = %25, %21
+  %30 = load i8*, i8** %4
+  %31 = load i32, i32* %5
+  %32 = insertvalue { i8*, i32 } undef, i8* %30, 0
+  %33 = insertvalue { i8*, i32 } %32, i32 %31, 1
+  resume { i8*, i32 } %33
 }
 
 ; Function Attrs: nobuiltin
@@ -210,28 +214,36 @@ define linkonce_odr void @_ZN4NodeC2Ei(%class.Node* %this, i32 %initialValue) un
 }
 
 ; Function Attrs: uwtable
-define linkonce_odr void @_ZN10LinkedList12releaseNodesEP4Node(%class.LinkedList* %this, %class.Node* %head) #2 comdat align 2 {
+define linkonce_odr void @_ZN10LinkedList12releaseNodesEP4Nodeb(%class.LinkedList* %this, %class.Node* %head, i1 zeroext %breakPoint) #2 comdat align 2 {
   %1 = alloca %class.LinkedList*, align 8
   %2 = alloca %class.Node*, align 8
+  %3 = alloca i8, align 1
   store %class.LinkedList* %this, %class.LinkedList** %1, align 8
   store %class.Node* %head, %class.Node** %2, align 8
-  %3 = load %class.LinkedList*, %class.LinkedList** %1
-  %4 = load %class.Node*, %class.Node** %2, align 8
-  %5 = getelementptr inbounds %class.Node, %class.Node* %4, i32 0, i32 1
-  %6 = load %class.Node*, %class.Node** %5, align 8
-  %7 = icmp ne %class.Node* %6, null
-  br i1 %7, label %8, label %12
+  %4 = zext i1 %breakPoint to i8
+  store i8 %4, i8* %3, align 1
+  %5 = load %class.LinkedList*, %class.LinkedList** %1
+  %6 = load i8, i8* %3, align 1
+  %7 = trunc i8 %6 to i1
+  br i1 %7, label %8, label %9
 
 ; <label>:8                                       ; preds = %0
-  %9 = load %class.Node*, %class.Node** %2, align 8
-  %10 = getelementptr inbounds %class.Node, %class.Node* %9, i32 0, i32 1
-  %11 = load %class.Node*, %class.Node** %10, align 8
-  call void @_ZN10LinkedList12releaseNodesEP4Node(%class.LinkedList* %3, %class.Node* %11)
-  br label %12
+  br label %18
 
-; <label>:12                                      ; preds = %8, %0
+; <label>:9                                       ; preds = %0
+  %10 = load %class.Node*, %class.Node** %2, align 8
+  %11 = getelementptr inbounds %class.Node, %class.Node* %10, i32 0, i32 1
+  %12 = load %class.Node*, %class.Node** %11, align 8
   %13 = load %class.Node*, %class.Node** %2, align 8
-  call void @_ZN10LinkedList10deleteNodeEP4Node(%class.LinkedList* %3, %class.Node* %13)
+  %14 = getelementptr inbounds %class.Node, %class.Node* %13, i32 0, i32 1
+  %15 = load %class.Node*, %class.Node** %14, align 8
+  %16 = icmp eq %class.Node* %15, null
+  call void @_ZN10LinkedList12releaseNodesEP4Nodeb(%class.LinkedList* %5, %class.Node* %12, i1 zeroext %16)
+  %17 = load %class.Node*, %class.Node** %2, align 8
+  call void @_ZN10LinkedList10deleteNodeEP4Node(%class.LinkedList* %5, %class.Node* %17)
+  br label %18
+
+; <label>:18                                      ; preds = %9, %8
   ret void
 }
 

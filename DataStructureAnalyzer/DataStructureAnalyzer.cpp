@@ -61,6 +61,8 @@ namespace {
       // errs() << "Function Body\n";
       // F.dump();
 
+      errs() << "Function memory address : " << &F << "\n";
+
       for (BasicBlock &BB : F) {
         // errs().write_escaped("Basic Block") << '\n';
         // BB.dump();
@@ -75,6 +77,8 @@ namespace {
         }
       }
 
+      // scc traverse for detecting loops in functions to identify
+      // which data structure is that we are working on
       for (scc_iterator<Function *> begin_it = scc_begin(&F),
                                     end_it = scc_end(&F);
            begin_it != end_it; ++begin_it) {

@@ -48,12 +48,14 @@ class LinkedList{
   }
 
   void deleteNode(Node *deleteNode) {
+    releaseNodes(deleteNode, false);
   }
 
-  void releaseNodes(Node *head) {
-    if (head->next != NULL) {
-      releaseNodes(head->next);
+  void releaseNodes(Node *head, bool breakPoint) {
+    if (breakPoint) {
+      return;
     }
+    releaseNodes(head->next, head->next == NULL);
     deleteNode(head);
   }
 };
@@ -61,6 +63,6 @@ class LinkedList{
 int main(int argc, char *argv[]) {
   LinkedList* l = new LinkedList();
   l->insertNode(new Node(5));
-  l->releaseNodes(l->head);
+  l->releaseNodes(l->head, l->head == NULL);
   return 0;
 }

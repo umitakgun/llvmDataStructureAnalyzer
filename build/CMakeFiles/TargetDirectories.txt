@@ -1,2 +1,8 @@
-/home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir
+/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/edit_cache.dir
+/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles/rebuild_cache.dir
+/home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer/CMakeFiles/rebuild_cache.dir
+/home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer/CMakeFiles/edit_cache.dir
 /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir
+/home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis/CMakeFiles/edit_cache.dir
+/home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis/CMakeFiles/rebuild_cache.dir
+/home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir
