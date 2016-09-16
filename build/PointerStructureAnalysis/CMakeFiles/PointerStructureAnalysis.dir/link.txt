@@ -1,1 +1,1 @@
-/home/umit/research/llvm/build/bin/clang++  -fPIC   -shared  -o libPointerStructureAnalysis.so CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.o  -L/home/umit/research/llvm/build_390/./lib 
+/Users/umit/research/llvm/build/bin/clang++   -bundle -Wl,-headerpad_max_install_names -undefined dynamic_lookup -o libPointerStructureAnalysis.so CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.o  -L/Users/umit/research/llvm/build_390/./lib 

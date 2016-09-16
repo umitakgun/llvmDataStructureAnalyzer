@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.1)
 
+if (APPLE)
+  include_directories([BEFORE] [SYSTEM] /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1 /usr/include /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include)
+endif (APPLE)
+
 SET(CMAKE_CXX_COMPILER "$ENV{LLVM_DIR}/bin/clang++")
 SET(CMAKE_C_COMPILER "$ENV{LLVM_DIR}/bin/clang")
 
