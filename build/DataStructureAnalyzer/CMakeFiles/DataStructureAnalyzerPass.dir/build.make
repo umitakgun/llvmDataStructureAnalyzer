@@ -60,15 +60,15 @@ include DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/flags.mak
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.o: DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/flags.make
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.o: ../DataStructureAnalyzer/CGAnalyzer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.o"
-	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.o -c /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/CGAnalyzer.cpp
+	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /home/umit/research/llvm/build/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.o -c /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/CGAnalyzer.cpp
 
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.i"
-	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/CGAnalyzer.cpp > CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.i
+	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /home/umit/research/llvm/build/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/CGAnalyzer.cpp > CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.i
 
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.s"
-	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/CGAnalyzer.cpp -o CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.s
+	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /home/umit/research/llvm/build/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/CGAnalyzer.cpp -o CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.s
 
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.o.requires:
 
@@ -84,15 +84,15 @@ DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/CGAnalyzer.cpp.o.
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.o: DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/flags.make
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.o: ../DataStructureAnalyzer/DataStructureAnalyzer.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.o"
-	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.o -c /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp
+	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /home/umit/research/llvm/build/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.o -c /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp
 
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.i"
-	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp > CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.i
+	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /home/umit/research/llvm/build/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp > CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.i
 
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.s"
-	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp -o CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.s
+	cd /home/umit/research/llvmDataStructureAnalyzer/build/DataStructureAnalyzer && /home/umit/research/llvm/build/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/umit/research/llvmDataStructureAnalyzer/DataStructureAnalyzer/DataStructureAnalyzer.cpp -o CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.s
 
 DataStructureAnalyzer/CMakeFiles/DataStructureAnalyzerPass.dir/DataStructureAnalyzer.cpp.o.requires:
 

@@ -32,36 +32,36 @@ class CGAnalyzerPass : public CallGraphSCCPass {
   }
 
   bool doFinalization(CallGraph &CG) {
-    for (auto it = CG.begin(); it != CG.end(); ++it) {
-      // CallGraphNode* node = (*it).second;
-      // Function *f = node->getFunction();
-      const Function *f = (*it).first;
-      CallGraphNode *node = (*it).second;
-      if (f != NULL && !f->hasExternalLinkage()) {
-        StringRef funcStr = f->getName();
-        std::string mangledName = funcStr.str();
-        auto fName = abi::__cxa_demangle(mangledName.c_str(), NULL, NULL, NULL);
-        if (fName != NULL) {
-          errs() << "Function: " << fName
-                 << " number of ref: " << node->getNumReferences() <<"\n";
-          // errs() << "MangledName :" << funcStr.str() << "\n";
-          // errs() << "siblings : \n";
-          // for (auto it = node->begin(); it != node->end(); ++it) {
-          //   CallGraphNode *siblings = (*it).second;
-          //   if (!siblings) {
-          //     Function *siblingFunction = siblings->getFunction();
-          //     if (!siblingFunction) {
-          //       errs() << &siblingFunction << "\n";
-          //     }
-          //   }
-          // }
-        } else {
-          errs() << funcStr.str() << "\n";
-        }
+    // for (auto it = CG.begin(); it != CG.end(); ++it) {
+    //   // CallGraphNode* node = (*it).second;
+    //   // Function *f = node->getFunction();
+    //   const Function *f = (*it).first;
+    //   CallGraphNode *node = (*it).second;
+    //   if (f != NULL && !f->hasExternalLinkage()) {
+    //     StringRef funcStr = f->getName();
+    //     std::string mangledName = funcStr.str();
+    //     auto fName = abi::__cxa_demangle(mangledName.c_str(), NULL, NULL, NULL);
+    //     if (fName != NULL) {
+    //       errs() << "Function: " << fName
+    //              << " number of ref: " << node->getNumReferences() <<"\n";
+    //       errs() << "MangledName :" << funcStr.str() << "\n";
+    //       errs() << "siblings : \n";
+    //       for (auto it = node->begin(); it != node->end(); ++it) {
+    //         CallGraphNode *siblings = (*it).second;
+    //         if (!siblings) {
+    //           Function *siblingFunction = siblings->getFunction();
+    //           if (!siblingFunction) {
+    //             errs() << &siblingFunction << "\n";
+    //           }
+    //         }
+    //       }
+    //     } else {
+    //       errs() << funcStr.str() << "\n";
+    //     }
 
-        // errs() << "Function instance address : " << f << "\n";
-      }
-    }
+    //     // errs() << "Function instance address : " << f << "\n";
+    //   }
+    // }
   }
 
  public:

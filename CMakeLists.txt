@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
 
-#SET(CMAKE_CXX_COMPILER "~/research/LLVM/build/bin/clang++")
-#SET(CMAKE_C_COMPILER "~/research/LLVM/build/bin/clang")
+SET(CMAKE_CXX_COMPILER "$ENV{LLVM_DIR}/bin/clang++")
+SET(CMAKE_C_COMPILER "$ENV{LLVM_DIR}/bin/clang")
 
 find_package(LLVM REQUIRED CONFIG)
 

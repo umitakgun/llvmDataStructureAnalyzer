@@ -60,15 +60,15 @@ include PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/flags.m
 PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.o: PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/flags.make
 PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.o: ../PointerStructureAnalysis/PointerStructureAnalysis.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/umit/research/llvmDataStructureAnalyzer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.o"
-	cd /home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.o -c /home/umit/research/llvmDataStructureAnalyzer/PointerStructureAnalysis/PointerStructureAnalysis.cpp
+	cd /home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis && /home/umit/research/llvm/build/bin/clang++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.o -c /home/umit/research/llvmDataStructureAnalyzer/PointerStructureAnalysis/PointerStructureAnalysis.cpp
 
 PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.i"
-	cd /home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/umit/research/llvmDataStructureAnalyzer/PointerStructureAnalysis/PointerStructureAnalysis.cpp > CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.i
+	cd /home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis && /home/umit/research/llvm/build/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/umit/research/llvmDataStructureAnalyzer/PointerStructureAnalysis/PointerStructureAnalysis.cpp > CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.i
 
 PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.s"
-	cd /home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/umit/research/llvmDataStructureAnalyzer/PointerStructureAnalysis/PointerStructureAnalysis.cpp -o CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.s
+	cd /home/umit/research/llvmDataStructureAnalyzer/build/PointerStructureAnalysis && /home/umit/research/llvm/build/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/umit/research/llvmDataStructureAnalyzer/PointerStructureAnalysis/PointerStructureAnalysis.cpp -o CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.s
 
 PointerStructureAnalysis/CMakeFiles/PointerStructureAnalysis.dir/PointerStructureAnalysis.cpp.o.requires:
 
